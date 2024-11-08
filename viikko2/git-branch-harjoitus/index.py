@@ -10,7 +10,7 @@ y = int(input("luku 2: "))
 
 print(f"{x} + {y} = {summa(x, y)}")
 print(f"{x} - {y} = {erotus(x, y)}")
-print(f"{x} * {y} = {tulo(x, y)}")
+print(f"{x} kerrottuna {y}:llä on {tulo(x, y)}")
 
 logger("lopetetaan")
 print("Moikka, moi!")#Muokattu
