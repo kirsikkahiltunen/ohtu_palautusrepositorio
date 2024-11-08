@@ -10,19 +10,14 @@ def main():
 
     FIN_players = filter(lambda player: player['nationality'] == 'FIN', response)
     FIN_players = list(FIN_players)
-    #print(FIN_players)
 
     sorted_players = sorted(FIN_players,reverse=True,key=lambda player: player['goals'] + player['assists'])
-
-    print(sorted_players)
 
     players = []
 
     for player_dict in sorted_players:
         player = Player(player_dict)
         players.append(player)
-
-    print(players)
 
     print("Players from FIN \n\n")
 
